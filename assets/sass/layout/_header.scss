@@ -1,0 +1,71 @@
+
+
+
+
+.hero {
+background-image: url('../img/bg-hero.svg');
+background-position: right bottom;
+background-size: 100%;
+background-repeat: no-repeat;
+min-height: 60vw;
+}
+   
+.hero-text {
+    text-align: center;
+    padding-right: 200px;
+    padding-top: 50px;
+
+}
+
+
+.cararter {
+    text-align: center;
+    padding-bottom: 50px;
+     
+
+
+
+
+}
+
+.grafico-texto {
+    display: flex;
+    flex-flow: row; 
+   
+    justify-content: space-around;   
+}
+
+.grafico {
+    padding-left: 20px;
+}
+ 
+.fondo-cajas {
+    background-image: url('../img/bg-price.png');
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+  
+    display: flex;
+   flex-flow: column nowrap;
+    background-repeat: no-repeat;
+  min-height: 60vw;
+    
+}
+
+.precio {
+    text-align: center;
+    color: white;
+    padding-bottom: 300px;
+}
+
+.cajas {
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    background-color: black;
+}
