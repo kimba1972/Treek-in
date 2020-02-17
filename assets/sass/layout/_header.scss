@@ -1,6 +1,11 @@
+body {
+    font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
 
-
-
+.margen {
+    margin: 30px 70px;
+}
 
 .contenedor {
 background-image: url('../img/bg-hero.svg');
@@ -13,11 +18,9 @@ min-height: 60vw;
  
 .hero-text {
     text-align: center;
-    padding-right: 200px;
+    padding-right: 600px;
     padding-top: 50px;
-
 }
-
 
 .cararter {
     text-align: center;

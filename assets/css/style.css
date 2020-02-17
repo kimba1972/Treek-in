@@ -9875,6 +9875,15 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.margen {
+  margin: 30px 70px;
+}
+
 .contenedor {
   background-image: url("../img/bg-hero.svg");
   background-position: right bottom;
@@ -9885,7 +9894,7 @@ h3 {
 
 .hero-text {
   text-align: center;
-  padding-right: 200px;
+  padding-right: 600px;
   padding-top: 50px;
 }
 
