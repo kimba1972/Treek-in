@@ -2,14 +2,15 @@
 
 
 
-.hero {
+.contenedor {
 background-image: url('../img/bg-hero.svg');
 background-position: right bottom;
 background-size: 100%;
 background-repeat: no-repeat;
 min-height: 60vw;
+
 }
-   
+ 
 .hero-text {
     text-align: center;
     padding-right: 200px;
@@ -22,50 +23,99 @@ min-height: 60vw;
     text-align: center;
     padding-bottom: 50px;
      
-
-
-
-
 }
 
 .grafico-texto {
     display: flex;
     flex-flow: row; 
-   
-    justify-content: space-around;   
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    padding-left: 100px;  
+    padding-right: 100px;  
 }
 
 .grafico {
-    padding-left: 20px;
+    display: flex;
+    justify-content: end;
+    animation-name: grafico;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
 }
- 
+@keyframes grafico {
+    from {
+       opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .fondo-cajas {
     background-image: url('../img/bg-price.png');
     background-position: center;
     background-attachment: contain;
     background-size: cover;
-  
-    display: flex;
-   flex-flow: column nowrap;
     background-repeat: no-repeat;
-  min-height: 60vw;
-    
+    min-height: 60vw;
+    align-items: center;   
 }
 
 .precio {
     text-align: center;
-    color: white;
-    padding-bottom: 300px;
+    color:white;
+    padding-top: 200px;
+    
 }
 
 .cajas {
+   
     display: flex;
-    flex-flow: row nowrap;  
-    justify-content: space-between;
-    justify-content: space-around;
+    flex-direction: column nowrap;  
     align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.button {
+    background-size: 100%;
+
+}
+    
+
+a {
+    text-align: center;
 }
 
 .footer {
     background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 50px;
+    .footer__grid_item {
+         margin: 20px;
+    }
+    
+    
+    .footer__grid {
+        color: white;
+        display: flex;
+        flex-flow: row nowrap; 
+        align-items: flex-end;
+       
+      
+       
+    }
+    .footer__derechos {
+        color: white;
+        display: flex;
+        flex-flow: row nowrap;
+
+    }
 }
+
+
+
+

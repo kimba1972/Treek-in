@@ -9875,7 +9875,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.hero {
+.contenedor {
   background-image: url("../img/bg-hero.svg");
   background-position: right bottom;
   background-size: 100%;
@@ -9898,39 +9898,123 @@ h3 {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .grafico {
-  padding-left: 20px;
+  display: flex;
+  justify-content: end;
+  animation-name: grafico;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
 }
 
+@keyframes grafico {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .fondo-cajas {
   background-image: url("../img/bg-price.png");
   background-position: center;
   background-attachment: contain;
   background-size: cover;
-  display: flex;
-  flex-flow: column nowrap;
   background-repeat: no-repeat;
   min-height: 60vw;
+  align-items: center;
 }
 
 .precio {
   text-align: center;
   color: white;
-  padding-bottom: 300px;
+  padding-top: 200px;
 }
 
 .cajas {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  justify-content: space-around;
+  flex-direction: column nowrap;
   align-items: center;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+.button {
+  background-size: 100%;
+}
+
+a {
+  text-align: center;
 }
 
 .footer {
   background-color: black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 50px;
+}
+.footer .footer__grid_item {
+  margin: 20px;
+}
+.footer .footer__grid {
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+}
+.footer .footer__derechos {
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+@media screen and (min-width: 711px) {
+  .contenedor {
+    background-image: url("../img/bg-hero.svg");
+    background-position: right bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 60vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 400px) {
+  .hero-text {
+    padding: 50px;
+    padding-bottom: 400px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .texto-grafico {
+    display: flex;
+    flex-direction: column nowrap;
+    padding-top: 40px;
+    text-align: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 815px) {
+  .cajas {
+    display: flex;
+    flex-direction: column wrap;
+    justify-content: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 520px) {
+  .footer {
+    color: white;
+    display: flex;
+    flex-direction: column wrap;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,48 +19,42 @@
 </head>
 <body>
   <!--Navegación-->
-  <div class="d-flex mb-3">
-    <div class="mr-auto p-2 bd-highlight">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            
-          </ul>
-        </div>
-      </nav>
-    </div>
-   <div></div>
-    <div class="bd-highlight"><!-- As a link -->
-      <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light">
+   <img src="assets/img/Logo.svg" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Acerca de<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Características</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Precios</a>
+        </li>
+        
+       <div class="row justify-content-end">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Iniciar Sesión</a>
+        </li> 
+        <li class="">
+          <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false">
+            Registrate
+          </button>
+        </li>
       </div>
-    <div class="p-2 bd-highlight">
-      <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-        Single toggle
-      </button>
+      </ul>
     </div>
-  </div>
-
-  </nav><!--Navegación-->
+  </nav>
  
   <!--Header-->
   
- <header class="hero">
-    <div class="hero-text"> 
+ <header class="contenedor">
+    
+  <div class="hero-text"> 
       <h1>Has Trekking sin <br>Parar</h1>
       <p>Con Treek-in te despreocuparás de la estimación de <br>tu viaje,
        ,ya que con unos simples pasos podrás <br>definir la mejor ruta a tomar con tus compañeros de <br>
@@ -75,49 +69,80 @@
     </div>
     <div class="grafico-texto">
     <div class="grafico">
-      <img src="assets/img/bar-graph.svg" alt="logo-estadistica">
+      <img src="assets/img/bar-graph.svg" alt="logo-grafico">
     </div>
       <div>
-      <h3 class="texto_grafico">Estadistica de tu progreso</h3>
+      <h3 class="texto-grafico">Estadistica de tu progreso</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quidem numquam voluptatum dolore quibusdam neque, dolorem, <br> itaque explicabo hic odit tempora repellendus ratione <br> nesciunt blanditiis et voluptas aliquam accusantium quis molestias.</p>
     </div>
     </div>
   </section><!--Section Caracteristicas-->
-
+<!--Precio de 2 Cajas-->
   <section class="fondo-cajas">
     <div>
       <h1 class="precio">Precios</h1>
     </div>
       <div class="cajas">
-    <div class="card caja1" style="width: 20rem;">
+    <div class="card caja1" style="width: 22rem;">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h6 class="card-subtitle mb-2">Trekk-in Free</h6>
+          <h2 class="card-title">$ 0 / mes</h2>
+          <hr>
+          <ul>
+           <li>Ver mapas creado por usuarios</li>
+           <br>
+           <li>Conectar con otros usuarios</li>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <hr>
           
-          <a href="#" class="card-link">Another link</a>
+          </ul>
+          <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false">
+            Obtén Free
+          </button>
         </div>
     </div>
-        <div class="card caja2" style="width: 20rem;">
+        <div class="card caja2" style="width: 22rem;">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h6 class="card-subtitle mb-2">Trekk-in Premium</h6>
+            <h2 class="card-title">$ 3500 / mes</h2>
+            <hr>
+            <ul>
+             <li>Ver mapas creados por usuarios</li>
+             <br>
+             <li>Conectar con otros usuarios</li>
+             <br>
+             <li>Definir mejores rutas</li>
+             <br>
+             <li>Mapas Offline</li>
+             <br>
+             <li>Integración con otras aplicaciones</li>
+             
+            </ul>
+            <hr>
+            <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false">
+              Obtén Free 
+            </button>
            
-            <a href="#" class="card-link">Another link</a>
           </div>
         </div>
-      </div>
+      </div><!--Precio de 2 Cajas-->
    
     </section>
-
-  <footer class="footer">
-    <p>Legal</p>
-    <p>Cookies</p>
-    <p>Sobre anuncios</p>
-
-
-  </footer>
+    <footer class="footer">
+        <div class="footer__grid">
+          <p class="footer__grid_item">Legal</p>
+          <p class="footer__grid_item">Cookies</p>
+          <p class="footer__grid_item">Sobre anuncios</p>
+        </div>
+      <div class="footer__derechos">
+        <p>© 2018 Trekk-in SPA.</p>
+      </div>
+</footer>
 
 
 
