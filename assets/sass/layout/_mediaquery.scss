@@ -32,24 +32,38 @@
     }
 }
 
-@media screen and (min-width:815px){
+@media screen and (max-width:991.98px){
     .cajas {
         display: flex;
-    flex-direction: column wrap;  
-    justify-content: center;
-    justify-content: space-around; 
+    flex-flow: column nowrap; 
+   .caja1 {
+       margin-bottom: 30px;
+   }
+    .caja2 {
+        margin-bottom: 30px;
+    }
     }   
 }
+ 
+.precio {
+    margin-bottom: 10px;
+}
 
-@media screen and (min-width:520px){
+
+@media screen and (max-width:991.98px){
     .footer {
         color: white;
         display: flex;
-        flex-direction: column wrap;
-        
-
+        flex-direction: column nowrap;
+    }
+    .footer__derechos {
+        display: flex;
+        flex-direction: column nowrap;
+       
     }
 }
+
+
 
 
 

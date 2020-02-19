@@ -5,7 +5,20 @@ font-family: 'Open Sans', sans-serif;
 
 .margen {
     margin: 30px 70px;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    .navderecho {
+        display: flex;
+        flex-direction: row nowrap;
+        justify-content: space-between;
+    }
 }
+ 
+
+
+
+
 
 .contenedor {
 background-image: url('../img/bg-hero.svg');
@@ -67,7 +80,7 @@ min-height: 60vw;
 .precio {
     text-align: center;
     color:white;
-    padding-top: 200px;
+    padding-top: 220px;
     
 }
 
@@ -78,6 +91,7 @@ min-height: 60vw;
     align-items: center;
     justify-content: space-around;
     padding-top: 100px;
+  
 }
 
 .button {
@@ -93,7 +107,7 @@ a {
 .footer {
     background-color: black;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-end;
     padding: 50px;

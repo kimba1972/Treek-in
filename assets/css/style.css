@@ -9882,6 +9882,9 @@ body {
 
 .margen {
   margin: 30px 70px;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-between;
 }
 
 .contenedor {
@@ -9942,7 +9945,7 @@ body {
 .precio {
   text-align: center;
   color: white;
-  padding-top: 200px;
+  padding-top: 220px;
 }
 
 .cajas {
@@ -9964,7 +9967,7 @@ a {
 .footer {
   background-color: black;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: flex-end;
   padding: 50px;
@@ -10010,19 +10013,32 @@ a {
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 815px) {
+@media screen and (max-width: 991.98px) {
   .cajas {
     display: flex;
-    flex-direction: column wrap;
-    justify-content: center;
-    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
+  .cajas .caja1 {
+    margin-bottom: 30px;
+  }
+  .cajas .caja2 {
+    margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 520px) {
+.precio {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 991.98px) {
   .footer {
     color: white;
     display: flex;
-    flex-direction: column wrap;
+    flex-direction: column nowrap;
+  }
+
+  .footer__derechos {
+    display: flex;
+    flex-direction: column nowrap;
   }
 }
 
